@@ -1,0 +1,22 @@
+{
+  "name": "typescript-algroitms-solutions",
+  "version": "1.0.0",
+  "description": "Solutions to DSA problems in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc && node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abduljabbar-Alhamid/typescript-algroitms-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Abduljabbar-Alhamid/typescript-algroitms-solutions/issues"
+  },
+  "homepage": "https://github.com/Abduljabbar-Alhamid/typescript-algroitms-solutions#readme"
+}
