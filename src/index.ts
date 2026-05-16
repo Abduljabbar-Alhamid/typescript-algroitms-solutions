@@ -1,4 +1,5 @@
 //problem 1
+
 const floodFill = (
   img: number[][],
   sr: number,
@@ -27,7 +28,7 @@ const floodFill = (
 
 // problem 2
 
-function trap(arr: number[]): number {
+const trap = (arr: number[]): number => {
   const n = arr.length;
   if (n === 0) return 0;
 
@@ -59,11 +60,11 @@ function trap(arr: number[]): number {
   }
 
   return water;
-}
+};
 
 // problem 3
 
-function climbStairs(n: number): number {
+const climbStairs = (n: number): number => {
   if (n <= 1) return 1;
 
   const dp: number[] = new Array(n + 1).fill(0);
@@ -75,25 +76,25 @@ function climbStairs(n: number): number {
   }
 
   return dp[n]!;
-}
+};
 
 //problem 4
 
-function canJump(arr: number[]): boolean {
+const canJump = (arr: number[]): boolean => {
   let maxReach = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (i > maxReach) return false; // can't reach index i
+    if (i > maxReach) return false;
     maxReach = Math.max(maxReach, i + arr[i]!);
     if (maxReach >= arr.length - 1) return true;
   }
 
   return true;
-}
+};
 
 // problem 5
 
-function rodCutting(price: number[], n: number): number {
+const rodCutting = (price: number[], n: number): number => {
   const dp: number[] = new Array(n + 1).fill(0);
 
   for (let len = 1; len <= n; len++) {
@@ -103,4 +104,4 @@ function rodCutting(price: number[], n: number): number {
   }
 
   return dp[n]!;
-}
+};
